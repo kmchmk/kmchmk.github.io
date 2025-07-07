@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Chanaka Karunarathne - Senior Software Engineer",
   description: "Senior Software Engineer specializing in C++, Java, and Python. Currently working at Favorite Medium in Chiang Mai, Thailand.",
+  icons: {
+    icon: "/profile.jpg",
+  },
 };
 
 export default function RootLayout({
