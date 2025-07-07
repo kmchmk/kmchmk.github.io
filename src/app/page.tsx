@@ -2,17 +2,18 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <main className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
       {/* Hero Section */}
       <section className="py-20 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="w-32 h-32 mx-auto rounded-full overflow-hidden mb-8">
             <Image 
               src="/profile.jpg" 
-              alt="Chanaka Karunarathne" 
+              alt="Chanaka Karunarathne - Senior Software Engineer and Digital Nomad" 
               width={128} 
               height={128} 
               className="w-full h-full object-cover"
+              priority
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-2">
@@ -73,6 +74,6 @@ export default function Home() {
           <p className="text-slate-300">© 2025 Chanaka Karunarathne (@kmchmk)</p>
         </div>
       </footer>
-    </div>
+    </main>
   );
 }
