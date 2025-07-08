@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from "../components/Navigation";
 
 export const metadata: Metadata = {
   title: "Chanaka Karunarathne - Senior Software Engineer | @kmchmk",
@@ -117,7 +116,6 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <Navigation />
         {children}
       </body>
     </html>
