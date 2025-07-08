@@ -7,7 +7,6 @@ export default function Navigation() {
 
   const navItems = [
     { href: '#about', label: 'About' },
-    { href: '#projects', label: 'Projects' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -15,12 +14,12 @@ export default function Navigation() {
     <nav className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-xl font-bold text-slate-900 dark:text-white">
+          <div className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">
             Chanaka Karunarathne
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden sm:flex space-x-6 lg:space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -33,10 +32,11 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="sm:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white"
+              aria-label="Toggle menu"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -51,7 +51,7 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4">
+          <div className="sm:hidden pb-4">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
