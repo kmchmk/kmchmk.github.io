@@ -1,16 +1,15 @@
 {
-  "name": "Chanaka Karunarathne - Senior Software Engineer",
+  "name": "Chanaka Karunarathne | Projects & Travel",
   "short_name": "kmchmk",
-  "description": "Senior Software Engineer specializing in C++, Java, and Python. Digital nomad based in Chiang Mai, Thailand.",
+  "description": "Software projects and countries visited by Chanaka Karunarathne.",
   "icons": [
     {
       "src": "/profile.jpg",
-      "sizes": "512x512",
       "type": "image/jpeg"
     }
   ],
-  "theme_color": "#1e293b",
-  "background_color": "#f8fafc",
+  "theme_color": "#202824",
+  "background_color": "#f8f7f3",
   "display": "standalone",
   "start_url": "/",
   "lang": "en"
